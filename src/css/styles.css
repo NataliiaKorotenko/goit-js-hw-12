@@ -5,7 +5,6 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
 
 body {
@@ -49,7 +48,8 @@ section {
   letter-spacing: 0.04em;
   color: #808080;
 }
-.search-btn {
+.search-btn,
+.load-more-btn {
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
@@ -64,10 +64,16 @@ section {
   transition: background-color 0.5s ease-in-out;
 }
 
+.load-more-btn {
+  display: block;
+  margin: 12px auto;
+}
+
 .search-btn:hover,
 .search-btn:focus {
   background: #6c8cff;
 }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
